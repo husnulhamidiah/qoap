@@ -1,0 +1,43 @@
+{
+  "name": "via-middleware",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/production",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/dev",
+    "watch": "nodemon bin/dev",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && mkdir dist && babel src -s -d dist",
+    "production": "npm run build && node bin/production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/husnulhamidiah/via-middleware.git"
+  },
+  "author": "Husnul Anwari <husnulhamidiah@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/husnulhamidiah/via-middleware/issues"
+  },
+  "homepage": "https://github.com/husnulhamidiah/via-middleware#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-register": "^6.22.0"
+  },
+  "dependencies": {
+    "ascoltatori": "^4.1.0",
+    "body-parser": "^1.17.1",
+    "coap": "^0.21.0",
+    "config": "^1.25.1",
+    "consign": "^0.1.4",
+    "express": "^4.15.2",
+    "global": "^4.3.2",
+    "mqtt": "^1.14.1",
+    "redis": "^2.7.1",
+    "socket.io": "^1.7.3",
+    "winston": "^2.3.1"
+  }
+}
